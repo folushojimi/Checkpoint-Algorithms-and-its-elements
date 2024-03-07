@@ -1,0 +1,80 @@
+ function readSentence(sentence) {
+  for (let i = 0; i < sentence.length; i++) {
+    process.stdout.write(sentence[i]);
+    if (sentence[i] === '.') {
+      break;
+    }
+  }
+}
+
+//Example usage:
+let inputSentence = ("Nelson is a software developer.");
+readSentence(inputSentence);
+
+//console.log(readSentence);
+
+let sentenceLength = inputSentence.length;
+//console.log(sentenceLength);
+
+let wordsArray = inputSentence.split(' ');
+let numberOfWords = wordsArray.length;
+//console.log(numberOfWords);
+
+function countVowels(sentence) {
+  const vowels = 'aeiouAEIOU';
+  let vowelCount = 0;
+  
+  for(let i = 0; i < sentence.length; i++) {
+    if (vowels.includes(sentence[i]))
+    {
+      vowelCount++;
+    }
+  }
+  return vowelCount;
+}
+
+//let inputSentence = ("Nelson is a software developer.");
+let numberOfVowels = countVowels(inputSentence);
+
+//console.log(numberOfVowels)
+
+
+function readSentence(sentence) {
+  for (let i = 0; i < sentence.length; i++) {
+    process.stdout.write(sentence[i]);
+    if (sentence[i] === '.') {
+      break;
+    }
+  }
+}
+
+//Example usage:
+let inputSentence = ("Nelson is a software developer.");
+readSentence(inputSentence);
+
+//console.log(readSentence);
+
+let sentenceLength = inputSentence.length;
+//console.log(sentenceLength);
+
+let wordsArray = inputSentence.split(' ');
+let numberOfWords = wordsArray.length;
+//console.log(numberOfWords);
+
+function countVowels(sentence) {
+  const vowels = 'aeiouAEIOU';
+  let vowelCount = 0;
+  
+  for(let i = 0; i < sentence.length; i++) {
+    if (vowels.includes(sentence[i]))
+    {
+      vowelCount++;
+    }
+  }
+  return vowelCount;
+}
+
+//let inputSentence = ("Nelson is a software developer.");
+let numberOfVowels = countVowels(inputSentence);
+
+//console.log(numberOfVowels)
